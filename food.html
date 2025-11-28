@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagaytay Tourism</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1615; 
+            color: #e3e8e7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        
+        .quote {
+            background-color: #21302c;
+            color: #eaf2f1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            background-color: #0d131a; 
+        }
+
+       
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; 
+            margin-top: 60px; 
+            overflow: hidden;
+        }
+        
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1.8s ease-in-out; 
+        }
+        
+
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        
+        footer {
+            background-color: #1a2429;
+            color: #e7eeee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+            .slideshow-container {
+                height: 50vh;
+            }
+        }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.side-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 2;
+    max-width: 350px;
+}
+
+.side-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.side-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .side-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 80%;
+    }
+}
+.col img{
+    height: 590px;
+    width: 1900px;
+    object-fit: cover;
+}
+.col img:hover{
+      transform: scale(1.1); 
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="quote">
+        "Food"
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PHTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facts.html">Facts & Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">Hotel Accommodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">What to Eat?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Tourist Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">About the Authors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1>&nbsp;</h1>
+        <div class="slideshow-container">
+        <div class="overlay"></div>
+        <div class="side-content">
+            <div class ="header">
+            <p class="fs-1 fw-bolder">Food</p>
+            
+            </div> 
+           <p class="fs-4">Tagaytay is home to many famous dishes and deserts, some of which include their famous bulalo and buko pie. </p>
+        </div>
+            <div class="slideshow-container">
+            <div style="width:100%;height:100%;background:#16201c;display:flex;align-items:center;justify-content:center;color:#9db5aa;font-size:1.5rem;">
+                
+                <img class="slide img-fluid" src="https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/red-meats-&-red-meat-dishes/bulalo-with-lemongrass-and-ginger/bulalo-with-tanglad-and-ginger-main-banner.jpg" alt="Tagaytay 1" >
+                <img class="slide" src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/353548.jpg?resize=1200:*" alt="Tagaytay 2" >
+                <img class="slide" src="https://assets.unileversolutions.com/v1/85775930.jpg" alt="Tagaytay 3" >
+                <img class="slide" src="https://www.coffeebeans.ph/storage/2023/02/robusta-1.jpg" alt="Tagaytay 4" >
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="maincontentlist">
+        <div class="container">
+            <h1>Here are some foods you have to try!</h1>
+            <hr>
+            <div class="row row-cols-1 p-10">
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Bulalo</h1><br>
+                <img class=" img-thumbnail" src="https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/red-meats-&-red-meat-dishes/bulalo-with-lemongrass-and-ginger/bulalo-with-tanglad-and-ginger-main-banner.jpg" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">This iconic Filipino dish features slow-cooked beef shank and bone marrow simmered in a rich, savory broth. It's a hearty and comforting meal perfect for a chilly Tagaytay evening. Head to Balay Dako, a renowned restaurant known for their traditional Filipino dishes, to experience a truly authentic bulalo.</p>
+                <br><br></div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Kare-kare</h1><br>
+                <img class=" img-thumbnail" src="https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/red-meats-&-red-meat-dishes/kare-kare/kare-kare-main.jpg" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">Kare-kare is traditionally cooked in a clay cooking pot known as palayok, and the vessel also acts as a serving bowl once the dish is properly cooked. Nowadays, it is often served at numerous Filipino festivities. Some believe that kare-kare has origins in the Pampanga region, while others claim that the name of the dish is derived from the Indian word curry, and that it was introduced to the Philippines by Indians from the Rizal province. 
+</p><br><br>
+                </div><br>
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Puto</h1><br>
+                <img class=" img-thumbnail" src="https://filipinoeggrolls.com/wp-content/uploads/2021/02/steamed.jpg" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">The lightly sweetened puto are popular Filipino steamed rice cakes traditionally consisting of finely ground soaked rice that is steamed in round containers and served sliced. The popularity of these versatile cakes has caused the development of many modern puto varieties, which often vary in texture, color, shape, size, and flavor.</p>
+                <br><br></div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Crispy Pata</h1><br>
+                <img class=" img-thumbnail" src="https://preview.redd.it/thoughts-about-crispy-pata-v0-ii1txwstag5f1.jpeg?auto=webp&s=ff42175c2c4203ab65d05c46457ae2508de86779" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">Crispy pata is one of the most common Filipino dishes served on special occasions. It consists of a whole pork leg that is cooked until tender. It is then dried and deep-fried until golden brown and crispy. The leg is usually cooked alongside various spices such as bay leaves and peppercorns.
+
+<br><br>It is traditionally rubbed with a spice mixture before it is fried. Served sliced, it is often accompanied by pickled papaya and a tart sauce which combines vinegar, soy sauce, and a variety of spices.
+</p><br><br>
+                </div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Tawilis</h1><br>
+                <img class=" img-thumbnail" src="https://mytraveldigest.wordpress.com/wp-content/uploads/2015/09/crispy-fried-tawilis-nutrition-facts.jpg?w=1482&h=768&crop=1" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">Tawilis in Tagaytay is special because its a freshwater sardine endemic to Taal Lake, the tourist destination most people anticipate seeing when visiting the city. Tawilis is often prepared by marinating it in vinegar, garlic, and other spices and deep-frying it until crispy. It’s commonly served with a side of sliced tomatoes and onions and eaten with steaming hot rice.
+</p><br><br>
+                </div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-warning display-3"> Herbal Tea</h1><br>
+                <img class=" img-thumbnail" src="https://teacultureoftheworld.com/cdn/shop/articles/August-Blog-3-665x300_632beded-d588-41b7-87f6-c1abe726e8b1.jpg?v=1670001527&width=665" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">After eating a hearty serving of bulalo, try drinking a warm cup of herbal tea. The cool and temperate climate of Tagaytay makes it an ideal location for growing various herbs, such as lemongrass, pandan, and ginger, commonly used in herbal tea blends.Additionally, many of the herbs grown in Tagaytay have medicinal properties that locals traditionally used to promote wellness and treat various ailments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>By Ruiz | © 2025 Tagaytay Tourism Project</p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.opacity = 1;
+            setTimeout(showSlides, 3500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

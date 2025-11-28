@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagaytay Tourism</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1615; 
+            color: #e3e8e7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        
+        .quote {
+            background-color: #21302c;
+            color: #eaf2f1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            background-color: #0d131a; 
+        }
+
+       
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; 
+            margin-top: 60px; 
+            overflow: hidden;
+        }
+        
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1.8s ease-in-out; 
+        }
+        
+
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        
+        footer {
+            background-color: #1a2429;
+            color: #e7eeee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+            .slideshow-container {
+                height: 50vh;
+            }
+        }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.side-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 2;
+    max-width: 350px;
+}
+
+.side-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.side-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .side-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 80%;
+    }
+}
+.col img{
+    height: 590px;
+    width: 1900px;
+    object-fit: cover;
+}
+.col img:hover{
+      transform: scale(1.1); 
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="quote">
+        "Food"
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PHTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facts.html">Facts & Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">Hotel Accommodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">What to Eat?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Tourist Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">About the Authors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>&nbsp;</h1>
+        <div class="slideshow-container">
+            <div class="overlay"></div>
+            <div class="side-content">
+            <div class ="header">
+            <p class="fs-1 fw-bolder">
+            Hotels & Accomodations</p>
+            
+            </div> 
+           <p class="fs-4">Tagaytay has various hotels where you can stay whenever you want to visit! </p>
+            </div>
+            <div class="slideshow-container">
+            <div style="width:100%;height:100%;background:#16201c;display:flex;align-items:center;justify-content:center;color:#9db5aa;font-size:1.5rem;">
+                
+                <img class="slide img-fluid" src="https://haspcms-chroma-hospitality.s3.ap-southeast-1.amazonaws.com/ssjxe3QKB1XNLpPRJszYZbrRnF2CTj-metaQUdEcFNCZU5HcXd1VzlkRFlRT041QU9sYlV1VzJ5LW1ldGFVVlZGVTFRZ1NFOVVSVXdnVkVGSFFWbFVRVmtnUmtGRFFVUkZJREU1TWpCNE9UQXdJQ2d5S1NBb01Ta3VkMlZpY0E9PS0ud2VicA%3D%3D-.webp" alt="Tagaytay 1" >
+                <img class="slide" src="https://gttp.images.tshiftcdn.com/310159/x/0/12-best-tagaytay-city-hotels-with-stunning-view-of-taal-volcano-14.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Tagaytay 2" >
+                <img class="slide" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/405281090.jpg?k=021651dfda94b7eb93126f2edbd342cbdcab78370c7d75316fb2fdcfcdc6acf2&o=" alt="Tagaytay 3" >
+                <img class="slide" src="https://filinvesthospitality.com/sites/default/files/styles/property_node_banner/public/2022-03/kmt26707-hdr2.jpg?itok=9DutuByM" alt="Tagaytay 4" >
+            </div>
+            </div>
+            </div>
+            </section>
+                <section id="maincontentlist">
+            <div class="container">
+            <h1>Here are some highly appraised hotels in Tagaytay!</h1>
+            <hr>
+            <div class="row row-cols-1  row-cols-md-2 p-10">
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger display-3"> Containers by Eco Hotel</h1><br>
+                <img class=" img-thumbnail" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/669466673.jpg?k=466046ae5745b652510aff93cb59ff4c6f21c8e5d6349a45e04ea8675863f120&o=" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">If you prefer an environmentally friendly hotel with a luxurious design, Containers by Eco Hotel is the best one among all Tagaytay hotels. The hotel is known for its design and durability. The main material that was used for this structure is Corten steel which is known to be thick, stable, and durable. The hotel’s structure is said to be able to endure storms. All the rooms have a cozy bed, aircon, flat-screen television, and a bathroom. Also, Containers Hotel has multiple activities for a staycation in Tagaytay. One of its valuable assets is the spacious roof deck where people are allowed to camp and where children can play in the playground. If you plan to camp out, then make sure to have a tent with you and set it up early so you won’t run out of space.
+                            </p>
+                <p class="fs-3 text-left">There is also a Filipino Restaurant named Camping and Grilling at the Roofdeck wherelocal cuisines and drinks are served. The hotel also has a Tagaytay tourist site which is the Eco Scrap Shop where guests will be taught on building items out of recycled scraps. This workshop was built as an effort of the Eco Hotel to share its advocacy to the guests. </p>
+                <br><br></div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger  display-4"> Nurture Wellness Village</h1><br>
+                <img class=" img-thumbnail" src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/m1of3px36xharpjgzqpg/Nurture%20Wellness%20Village%20Spa%20Experience%20in%20Tagaytay%2C%20Philippines.jpg" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">The Nurture Wellness Village is the most relaxing spot out of all Tagaytay hotels and is known as a Tagaytay tourist spot. This hotel spa was recognized as one of the 28 Most Relaxing Spas in Asia by CNN Go and Top 7 Spas of the Philippines by Asia Spa Magazine. Thus, the Nurture Wellness Village serves as a tourist spot that offers the perfect Tagaytay staycation for exhausted visitors.
+
+</p><p class="fs-3 text-left">The hotel spa is best known for its ecotherapy services which are complemented by the venue’s Filipino and Ifugao design. During your stay, what you cannot afford to miss out on is the massage and pampering in the spa suites and rooms. To complement your relaxing stay, the rooms have varying views of nature such as the gardens and forests. Each room has an aircon, cable television, bathroom, and a good for two free breakfast.
+</p><br><br>
+                </div><br>
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger display-3"> Oriental Luxury Suites</h1><br>
+                <img class=" img-thumbnail" src="https://gttp.images.tshiftcdn.com/353285/x/0/an-exterior-view-of-the-oriental-luxury-suites-hotel-the-accommodation-included-in-this-travel-package-in-tagaytay-city.jpg?dpr=2&height=360&quality=65" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">If you’re looking for exclusivity and privacy during your staycation in Tagaytay, you should consider the Oriental Luxury Suites. Home to only seven elegant rooms, the property will give you the quiet getaway you need. Each room is named after a city in Thailand and comes with a personal butler service. While it has become a favorite for couples, friends and families will also find a comfortable stay here as there are rooms that can accommodate up to four adults.
+If the Tagaytay weather is still not cool enough for you, you can take a dip at the hotel’s infinity pool, which has beautiful views of Tagaytay and Batangas.
+</p>
+                <br><br></div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger display-3">Hotel Monticello</h1><br>h
+                <img class=" img-thumbnail" src="https://lh3.googleusercontent.com/proxy/3wbLjbXxwv9nBse31WUibs9dtUuSD495qXCGn9mHBDiSfYcA1nfRpImntEj9MBBktxNoryKrZf6EHj4pOWIEUCmKJ3iwEpYzt3X_sTa-3Z7g0H7QyGiazE4pY0nCnWJ1fsadExONRymSa0hsaxPwKhhVUSHOSCE=s1360-w1360-h1020-rw" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">Hotel Monticello is a Tagaytay hotel that is in the middle of everything. The hotel serves as a strategic location for tourists since it is near Tagaytay’s tourist spots such as malls and reputable restaurants. The venue is also perfect for a Tagaytay staycation since it has a quiet vibe where you can simply chill and relax.
+The luxurious and contemporary room designs are evident through the 42-inch-flat-screen television, free WiFi, aircon, coffee maker, mini-chiller, and electronic safety deposit box. You can simply lie in bed all day as it has plushy bedding.
+
+</p><br><br>
+                </div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger display-3"> Cabins by Eco Hotel</h1><br>
+                <img class=" img-thumbnail" src="https://lh3.googleusercontent.com/p/AF1QipM2sv5gvZqo7QT543vuQFngdtYUHrJKy_T0MDtT=s1360-w1360-h1020-rw" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">Cabins by Eco Hotel Tagaytay is not only the most unique Tagaytay hotel but also in the entire country. The hotel is dedicated to providing quality services by also upholding environmental conservation. This is evident as the cabins were built with home-made bricks, sustainable wood, and pinewood. The rooms were also meant for natural airflow and lighting to enter the room.
+</p><br><br>
+                </div>
+
+                <div class="col">
+                <h1 class="fw-bolder text-uppercase text-danger display-3"> Anya Resort Tagaytay
+</h1><br>
+                <img class=" img-thumbnail" src="https://i0.wp.com/outoftownblog.com/wp-content/uploads/2018/06/Sunset-at-Anya-Resort-Tagaytay.jpeg?fit=1500%2C1125&ssl=1" alt="bulalo"><br><br>
+                <p class="fs-3 text-left">
+Nestled amid lush tropical greenery, Anya Resort offers accommodations with free WiFi access in the entire property. Located 2.2 mi from Picnic Grove, it houses three dining options and provides complimentary parking on site.
+
+All air-conditioned suites are equipped with a living room, ironing facilities and an electric kettle. Each include a marble bathroom complete with bathrobes, a hairdryer and free toiletries. Some suites is fitted a bathtub to relax after a long day.
+
+Anya Resort Tagaytay has several dining options, including Samira by Chele Gonzalez which specializes in Spanish and modern contemporary dishes. You can also unwind at  Anila Poolside Restaurant that features brick oven-baked pizzas, salads, and pasta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>By Ruiz | © 2025 Tagaytay Tourism Project</p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.opacity = 1;
+            setTimeout(showSlides, 3500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

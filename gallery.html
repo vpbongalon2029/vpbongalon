@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagaytay Tourism</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1615; 
+            color: #e3e8e7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .quote {
+            background-color: #21302c;
+            color: #eaf2f1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            background-color: #0d131a; 
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 80vh;
+            margin-top: 20px;
+            overflow: hidden;
+            background-color: #0f1615;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #ffffff;
+            background: rgba(0,0,0,0.35);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            max-width: 70%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 8px 12px;
+            margin-top: -22px;
+            color: #e3e8e7;
+            font-weight: bold;
+            font-size: 2rem;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.4);
+            user-select: none;
+            z-index: 2;
+        }
+
+        .prev:hover, .next:hover {
+            background: rgba(0,0,0,0.7);
+        }
+
+        .prev { left: 20px; }
+        .next { right: 20px; }
+
+        footer {
+            background-color: #1a2429;
+            color: #e7eeee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+                max-width: 90%;
+            }
+            .prev, .next {
+                font-size: 1.5rem;
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quote">Photo Gallery </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PHTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facts.html">Facts & Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">Hotel Accommodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">What to Eat?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Tourist Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">About the Authors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="gallery">
+
+        <h1>&nbsp;</h1>
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/589955611_732842862559442_7295172383096459197_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGaOH6ZXhwKEykipiF6n0ND_QtK14qSczf9C0rXipJzN1eBiIIWJyvPZ9hc5IV4f33vnJHUV4ZWEQfMraDVN_nU&_nc_ohc=Lqafx18LjUoQ7kNvwGIHI6W&_nc_oc=Adm4rBQZHcvsv-g7Ed2YGnr1wIERd-Z_pgxp41jO-KbqyrtVL0RQ5CnBOA3PRxUiIr8&_nc_zt=23&_nc_ht=scontent.fmnl25-1.fna&oh=03_Q7cD3wFDpQQu-dX2XN7KUdfZSnra1k3c581qmHdtwn9Cn-srRg&oe=6950D1EF" alt="Taal Volcano">
+                <div class="hero-text">Taal Volcano – Iconic volcano within Taal Lake, breathtaking views from Tagaytay Ridge</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://scontent.fmnl25-6.fna.fbcdn.net/v/t1.15752-9/589712509_867233726048803_1658484333001706457_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEjglvcMwZCbS0F_bJXnDCDjFrpoGXVGaGMWumgZdUZodh1WgAPZiza5xMmNVMnpSyfJhk3cpdRK3-gi_o03TWB&_nc_ohc=qPx5-TldJ_UQ7kNvwFOwrwY&_nc_oc=Adk7Wq1EjFaGvM-gbVHmsfxdmJUbnJ5Ddkg_PWsYnxH16PNMuZm5e70H7cdmh75YIyI&_nc_zt=23&_nc_ht=scontent.fmnl25-6.fna&oh=03_Q7cD3wHO9r8CQImlCzSWlsLDb--1NMR73ElNrbmIhcfNhdjkpw&oe=6950F831" alt="People's Park in the Sky">
+                <div class="hero-text">People's Park in the Sky – Historical park with panoramic views of Tagaytay and Taal Lake</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="https://scontent.fmnl25-6.fna.fbcdn.net/v/t1.15752-9/589867492_1335130311159017_8376846618120893077_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGvqIL6b4X1Igrk14XJXnfF4_D-b29WOxzj8P5vb1Y7HEenRGyBvv3OMaMkaffYZ2No6qiqpT8a2oynLw0AuzpG&_nc_ohc=u3P5PBskM5AQ7kNvwEEuetg&_nc_oc=AdlrPKYXPSSj9hyyorNgfuhca0251oPS_5YgK7KXYGDDJ26w6Zp81T_sgqXIx0aK4SA&_nc_zt=23&_nc_ht=scontent.fmnl25-6.fna&oh=03_Q7cD3wHfJEqRE9wTOaZZ8ViH37_pKtJP8o6krGaA7BeRLUfEDw&oe=6950E8D3" alt="Picnic Grove">
+                <div class="hero-text">Picnic Grove – Family-friendly spot with horse rides, zipline, and lush greenery</div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t1.15752-9/588940009_1187479182802725_585338818853291119_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHdHl_R8I_KRDwejL1cnSic40LZeaswjovjQtl5qzCOiyr_Cc5zdBvjQU4ZmXU43FmLxYjZbqyAhyYdLOyYYKkC&_nc_ohc=m-0B75jMNNoQ7kNvwF83_Zh&_nc_oc=AdkBi4Lu1ucYw3yVXrOY-UzVopBW_HRvmr6WEmsz4d8J9HlG0xyVoE6a6DMMBpK7aws&_nc_zt=23&_nc_ht=scontent.fmnl25-4.fna&oh=03_Q7cD3wE6CdRNVBPVxqb4AY34pbirXv797drUeHb8k4lyxIrkqA&oe=6950E699" alt="Sky Ranch Tagaytay">
+                <div class="hero-text">Sky Ranch Tagaytay – Fun amusement park with Ferris wheel and scenic views</div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/589437654_1742182006391206_3903791549300449229_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGiES_HtQTT1njflfgToVMaNH3iDTSCFh80feINNIIWH4QndaqkPQigTtynd9wtcZn-ChZVzYkWpFt917_ndMCQ&_nc_ohc=3QYI9QGbOJIQ7kNvwGMebD9&_nc_oc=AdmG-HcAGtG7iKTqoAgHLko-KozrMp8-PnODn11aOhHw4S7PJ0deSANKI29AZWsWhj4&_nc_zt=23&_nc_ht=scontent.fmnl25-1.fna&oh=03_Q7cD3wEycJEUugeEsbCwjNs9Euz_YmSwymgd1NuwCZB82jc5FQ&oe=6950CB92" alt="Museo Orlina">
+                <div class="hero-text">Museo Orlina – Modern art museum featuring glass sculptures by Ramon Orlina</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>By Ruiz | © 2025 Tagaytay Tourism Project</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        const heroTexts = document.getElementsByClassName("hero-text");
+
+        function showSlides(n) {
+            if (n >= slides.length) slideIndex = 0;
+            if (n < 0) slideIndex = slides.length - 1;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                heroTexts[i].style.opacity = 0;
+            }
+            slides[slideIndex].style.display = "block";
+            setTimeout(() => { heroTexts[slideIndex].style.opacity = 1; }, 200); // Fade in
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+
+        function autoSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+            setTimeout(autoSlides, 4000);
+        }
+
+        showSlides(slideIndex);
+        autoSlides();
+    </script>
+</body>
+</html>

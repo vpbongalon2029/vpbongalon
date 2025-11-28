@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagaytay Tourism</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1615; 
+            color: #e3e8e7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        
+        .quote {
+            background-color: #21302c;
+            color: #eaf2f1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            background-color: #0d131a; 
+        }
+        .navbar-brand{
+            font-family: 'Helvetica';
+        }
+       
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; 
+            margin-top: 60px; 
+            overflow: hidden;
+        }
+        
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1.8s ease-in-out; 
+        }
+        
+
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        
+        footer {
+            background-color: #1a2429;
+            color: #e7eeee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+            .slideshow-container {
+                height: 50vh;
+            }
+        }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    background-color: black;
+    z-index: 1;
+    opacity: 0.55;
+}
+
+.side-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 2;
+    max-width: 350px;
+    text-align: center;
+}
+
+.side-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center; 
+    
+}
+
+.side-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .side-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 80%;
+    }
+}
+.container-fluid p{
+    font-family: 'Poppins';
+}
+.direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 89%;
+}
+.indirect{
+    width: 70%;
+    margin: auto;
+}
+hr{
+    border: 5px white solid;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="quote">
+        "A City I'd Fall In Love With"
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PH Tour Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facts.html">Facts & Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">Hotel Accommodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">What to Eat?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Tourist Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">About the Authors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="slideshow-container">
+        <div class="overlay"></div>
+        <div class="side-content">
+            <h1>Getting Around Tagaytay</h1>
+            <p>Wander more, worry less</p>
+        </div>
+            <div class="slideshow-container">
+            <div style="width:100%;height:100%;background:#16201c;display:flex;align-items:center;justify-content:center;color:#9db5aa;font-size:1.5rem;">
+                
+                <img class="slide" src="https://tagaytayhotels.weebly.com/uploads/5/4/1/5/54152265/3736044.jpg?518" alt="Tagaytay 1">
+                <img class="slide" src="https://www.maccaferri.com/ph/wp-content/uploads/2023/05/18-1.png" alt="Tagaytay 2">
+                <img class="slide" src="https://media.discordapp.net/attachments/1442810481956884562/1443908725491368057/SanAgustin.png?ex=692ac84a&is=692976ca&hm=f85d3a894d743f5a17f198877293c2e74a133df1285a1f286d37ade07d076fc6&=&format=webp&quality=lossless&width=1421&height=800" alt="Tagaytay 3">
+                <img class="slide" src="https://images.esquiremag.ph/esquiremagph/images/2020/10/21/tagaytaybypass%20(1).jpg" alt="Tagaytay 4">
+            </div>
+        </div>
+        </div>
+    </section>
+
+<div class="container-fluid my-5">
+    <p>The typical bus fare from Manila to Tagaytay ranges from <u>P80 to P150.</u> For flexible planning, you may go via direct or semi-direct routes.</p>
+
+    <h2 class="text-center my-4">Best Direct Bus Routes</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col"><img src="https://media.discordapp.net/attachments/1442810481956884562/1443908724207915098/Pasay.png?ex=692ac84a&is=692976ca&hm=616ff584aec3b765e35c3e5671ee4108db7a5e60fcdd518dfdaefdde95f2cbe2&=&format=webp&quality=lossless&width=563&height=563" class="img-fluid" alt="Pasay"></div>
+        <div class="col"><img src="https://media.discordapp.net/attachments/1442810481956884562/1443908722425594056/Buendia.png?ex=692ac849&is=692976c9&hm=d7464bf8866466f613cfe1bb84929940bc1021823a43b49430c1f73e83f24d78&=&format=webp&quality=lossless&width=563&height=563" class="img-fluid" alt="Buendia"></div>
+        <div class="col"><img src="https://media.discordapp.net/attachments/1442810481956884562/1443908726603120711/Taft.png?ex=692ac84a&is=692976ca&hm=c97e1d1ffa3deb2c0b357511da70173d641f33a2473a8503c8756c2ce55a5ca2&=&format=webp&quality=lossless&width=563&height=563" class="img-fluid" alt="Taft"></div>
+    </div>
+
+    <h2 class="text-center my-4">Best Indirect Bus Routes</h2>
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col"><img src="https://media.discordapp.net/attachments/1442810481956884562/1443908723029315594/Cubao.png?ex=692ac84a&is=692976ca&hm=2f4770f846ed7d9b272859067eb36eddbc5b0f86100541439758eaee36daa8ef&=&format=webp&quality=lossless&width=563&height=563" class="img-fluid" alt="Cubao"></div>
+        <div class="col"><img src="https://media.discordapp.net/attachments/1442810481956884562/1443908723675496528/Makati.png?ex=692ac84a&is=692976ca&hm=dedf2f3fa5abdc912d3d6b75e68622cce4841582801df0ccb3acea1eab43e879&=&format=webp&quality=lossless&width=563&height=563" class="img-fluid" alt="Makati"></div>
+    </div>
+
+    <hr>
+    <div class="row align-items-center my-5">
+        <div class="col-md-6">
+            <p>When you get off onto Tagaytay, the most common drop off place is <b>Tagaytay Rotonda or Olivarez Plaza.</b> A walk around these places can lead you to local eateries, souvenir shops, and the city’s most visited attractions.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Aguinaldo_Highway_-_Tagaytay_rotonda_%28Tagaytay%2C_Cavite%3B_2017-03-16%29.jpg" class="img-fluid rotonda" alt="Rotonda">
+        </div>
+    </div>
+
+    <div class="row align-items-center my-5">
+        <div class="col-md-6 order-md-2">
+            <p>Another popular drop off place is <b>Tagaytay-Nasugbu Highway</b>, where you can see the best views of Taal Lake and the volcano. This stretch is also where you’ll find Sky Ranch and several restaurants with postcard-worthy panoramas.</p>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Tagaytay-Nasugbu_Road_%28Tagaytay%2C_Cavite%29%282018-02-01%29_2.jpg" class="img-fluid rotonda" alt="Nasugbu Highway">
+        </div>
+    </div>
+
+    <div class="row align-items-center my-5">
+        <div class="col-md-6">
+            <p>Meanwhile, south buses often pass the <b>Tagaytay-Calamba Road</b>, which is perfect if you’re planning to visit the Tagaytay Picnic Grove, People’s Park in the Sky, or other upland attractions.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.vigattintourism.com/assets/tourist_spots_photos/optimize/13515936176wdbaeWE.jpg" class="img-fluid rotonda" alt="Calamba Road">
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>By Bongalon, Mendoza, Ruiz | © 2025 Tagaytay Tourism Project</p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.opacity = 1;
+            setTimeout(showSlides, 3500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

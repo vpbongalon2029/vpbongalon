@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tagaytay Tourism</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f1615; 
+            color: #e3e8e7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        
+        .quote {
+            background-color: #21302c;
+            color: #eaf2f1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            background-color: #0d131a; 
+        }
+
+       
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; 
+            margin-top: 60px; 
+            overflow: hidden;
+        }
+        
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1.8s ease-in-out; 
+        }
+        
+
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        
+        footer {
+            background-color: #1a2429;
+            color: #e7eeee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+            .slideshow-container {
+                height: 50vh;
+            }
+        }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.side-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 2;
+    max-width: 350px;
+}
+
+.side-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.side-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .side-content {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 80%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="quote">
+        "A City I'd Fall In Love With"
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PHTG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facts.html">Facts & Demographics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">Hotel Accommodations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">What to Eat?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landmarks.html">Tourist Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">About the Authors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="slideshow-container">
+        <div class="overlay"></div>
+        <div class="side-content">
+            <h1>Welcome to Tagaytay</h1>
+            <p>Tagaytay is one of the most famous tourist attractions in the cities. It is home to the renowned Taal Lake and Taal Volcano, and delicious cuisine such as bulalo and the best buko pie and tarts you will ever lay your hands on. So, come on! Explore the different pages to see more.</p>
+        </div>
+            <div class="slideshow-container">
+            <div style="width:100%;height:100%;background:#16201c;display:flex;align-items:center;justify-content:center;color:#9db5aa;font-size:1.5rem;">
+                
+                <img class="slide" src="https://scontent.fcrk2-4.fna.fbcdn.net/v/t1.15752-9/589365512_2602243980174289_2060120728653833653_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHsO41Hh85cb62Yb_H_gK3cj8gnWYAn-KiPyCdZgCf4qIpEzzSHIdYOn8EmN-1QrnxJFvWU-j6HxASn0Bsh2D5B&_nc_ohc=zlg-r2Sk3DsQ7kNvwFKP_q7&_nc_oc=AdnoLaS_jiza5cORc-MXzv_CbJhuR7TR-WF7a7iw3iGVacmvJRc2wNLzxPvFfgWsSFo&_nc_zt=23&_nc_ht=scontent.fcrk2-4.fna&oh=03_Q7cD3wEnN5LTubvdJA0_whekvmsS9Yl5H6svVuM1jr1Vr0J33w&oe=694CEFB1" alt="Tagaytay 1" />
+                <img class="slide" src="https://scontent.fcrk2-4.fna.fbcdn.net/v/t1.15752-9/588735139_631493803353870_2376198877500818834_n.jpg?stp=dst-jpg_s2048x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHZePMplBV7j56t18g7rBzHkIdjXl4XAo-Qh2NeXhcCj7AQ9T5lwmbYjuQ3zE1HEQem1VuIWl1XXGI_A2RLSh3s&_nc_ohc=0I4OPdG4NRAQ7kNvwGqBMLz&_nc_oc=Admn6EZ5YZXVepN44uF10LZBrbLyr7VfD-Vfx1fZr5J0D7rbXh7qxmkRJ6NYjDO9BJA&_nc_zt=23&_nc_ht=scontent.fcrk2-4.fna&oh=03_Q7cD3wHdSgJGsGz0-F7uCPfcwm8ISGdT4m2IpRL1bhykNqyuGA&oe=694D02C6" alt="Tagaytay 2" />
+                <img class="slide" src="https://scontent.fcrk2-4.fna.fbcdn.net/v/t1.15752-9/589263961_1396367985409971_3813447078881585187_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE51HKhmTCGY30wZXZU3JPHTo9Z-b7FKExOj1n5vsUoTOk-pwK1rUsWZGH3l43VlTzDk7vgN2golbT7ELCkGCmb&_nc_ohc=T1u72isMCUYQ7kNvwG4GHst&_nc_oc=Admrowu5ixm9Fa3WVodbayng6WZ0grut3tSII3_Id07peP2LhUG7ahBFujonZu2CTXo&_nc_zt=23&_nc_ht=scontent.fcrk2-4.fna&oh=03_Q7cD3wGnQ5pbosbBZQsdWtf38c4WcbLpW7iSnI5P_sYNg0Rw3Q&oe=694D1F79" alt="Tagaytay 3" />
+                <img class="slide" src="https://scontent.fcrk2-4.fna.fbcdn.net/v/t1.15752-9/588755433_1905778363708834_7172848610892366647_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5d9CIKBvWJTE_IrA8XtFPmQWS1mHFYfGZBZLWYcVh8UVnh93U45a2S-CyP5cac_x6t2h6IcH_-PUO_6-qi3_q&_nc_ohc=APk1y6ckVKMQ7kNvwEv3_IT&_nc_oc=AdmJNjTlKdLej6YkdZHnRcGtb2VqN9wuCt4wspNcYlFpRCa1vPbBwdTG852lHb0qTIs&_nc_zt=23&_nc_ht=scontent.fcrk2-4.fna&oh=03_Q7cD3wFIIsNDW_q0axxr0if-QDLoVq-VQU8ULwRw87W2rn-TvA&oe=694CF1D5" alt="Tagaytay 4" />
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>By Ruiz | © 2025 Tagaytay Tourism Project</p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.opacity = 1;
+            setTimeout(showSlides, 3500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
